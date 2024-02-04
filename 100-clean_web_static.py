@@ -4,6 +4,7 @@ from fabric.api import *
 
 env.hosts = ['3.94.185.24', '54.157.167.20']
 
+
 def do_clean(number=0):
     """Fabric script (based on the file 3-deploy_web_static.py)
         that deletes out-of-date archives, using the function do_clean
