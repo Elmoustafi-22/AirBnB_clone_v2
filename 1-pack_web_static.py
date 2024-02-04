@@ -13,7 +13,7 @@ def do_pack():
     if not os.path.exists("versions"):
         local("mkdir versions")
     created = datetime.now().strftime("%Y%m%d%H%M%S")
-    name = "versions/web_static_{}.tgz".format(created))
+    name = "versions/web_static_{}.tgz".format(created)
     task = "tar -cvzf {} web_static".format(name)
     result = local(task)
     if not result.failed:
