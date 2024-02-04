@@ -8,6 +8,7 @@ from datetime import datetime
 from fabric.api import local
 import os
 
+
 def do_pack():
     """pack web_static contents into a .tgz archive"""
     if not os.path.exists("versions"):
@@ -18,5 +19,3 @@ def do_pack():
     result = local(task)
     if not result.failed:
         return name
-
-
