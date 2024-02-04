@@ -13,6 +13,7 @@ import os
 from os.path import exists
 env.hosts = ['3.94.185.24', '54.157.167.20']
 
+
 def do_pack():
     """pack web_static contents into a .tgz archive"""
     if not os.path.exists("versions"):
